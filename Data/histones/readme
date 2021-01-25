@@ -1,1 +1,13 @@
 
+The h5 files contains training and testing sets with approrpriate class labels.
+
+The following python function can be used to extract the data.
+
+def read_data(file):
+    f=h5py.File(file,'r')
+    x_train = np.array(f['x_train'])
+    x_test = np.array(f['x_test'])
+    y_train = np.array(f['y_train'])
+    y_test = np.array(f['y_test'])
+    f.close()
+    return(x_train,x_test,y_train,y_test)
