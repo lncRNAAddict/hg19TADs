@@ -1,6 +1,11 @@
 
 The h5 files contains training and testing sets with approrpriate class labels.
 
+x_train: training features
+x_test: testing features
+y_train: training class labels
+y_test: testing class labels
+
 The following python function can be used to extract the data.
 
 def read_data(file):
@@ -11,3 +16,5 @@ def read_data(file):
     y_test = np.array(f['y_test'])
     f.close()
     return(x_train,x_test,y_train,y_test)
+    
+    
