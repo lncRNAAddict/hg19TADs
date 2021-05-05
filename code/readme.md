@@ -12,3 +12,7 @@ To train a model using all sequence, and epigenetic features, use the code `runM
 - `argv[8]` file containing SINE transposon coverage
 - `argv[9]` file containing LTR transposon coverage
 - `argv[6]` file containing DNA transposon coverage
+
+For example to train model for cell line GM12878 using 5 bins for epigenetic features and 1 bin for sequence features,
+
+` python3.6 runModel_all.py ../histones/gm12878/ 5 1 ../kmer/rao_gm12878.3mer.csv ../Sequence/gm12878.promoters.csv ../conservation/gm12878.phastcons.txt ../Repeats/gm12878.LTR.txt ../Repeats/gm12878.LINE.txt ../Repeats/gm12878.SINE.txt ../Repeats/gm12878.DNA.txt`
