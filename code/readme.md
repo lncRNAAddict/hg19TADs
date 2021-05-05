@@ -15,4 +15,7 @@ To train a model using all sequence, and epigenetic features, use the code `runM
 
 For example to train model for cell line GM12878 using 5 bins for epigenetic features and 1 bin for sequence features,
 
-` python3.6 runModel_all.py ../histones/gm12878/ 5 1 ../kmer/rao_gm12878.3mer.csv ../Sequence/gm12878.promoters.csv ../conservation/gm12878.phastcons.txt ../Repeats/gm12878.LTR.txt ../Repeats/gm12878.LINE.txt ../Repeats/gm12878.SINE.txt ../Repeats/gm12878.DNA.txt`
+`python runModel_all.py ../Data/histones/gm12878/ 5 1 ../Data/kmer/rao_gm12878.3mer.csv ../Data/Sequence/gm12878.promoters.csv ../Data/Sequence/gm12878.phastcons.txt ../Data/Sequence/gm12878.LTR.txt ../Data/Sequence/gm12878.LINE.txt ../Data/Sequence/gm12878.SINE.txt ../Data/Sequence/gm12878.DNA.txt`
+
+
+Python version must be >=3.0
