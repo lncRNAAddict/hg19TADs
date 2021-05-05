@@ -1,4 +1,4 @@
-To train a model using all sequence, and epigenetic features, use the code `runModel_all.py`
+To train and test a model using all sequence, and epigenetic features, use the code `runModel_all.py`
 
 `runModel_all.py` takes 10 arguments when executed from command line
 
